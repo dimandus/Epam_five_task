@@ -1,12 +1,10 @@
+import java.util.Arrays;
 import java.util.Date;
 
-/**
- * Created by Dimandus on 14.11.2015.
- */
 public class Human implements Comparable<Human> {
-    String name;
-    Date birthday;
-    int passportNumber;
+    private String name;
+    private Date birthday;
+    private int passportNumber;
 
     public Human(String name, Date birthday, int passportNumber) {
         this.name = name;
@@ -45,6 +43,7 @@ public class Human implements Comparable<Human> {
         }
 
         return 0;
+
     }
 
     @Override
