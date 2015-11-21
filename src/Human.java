@@ -7,7 +7,7 @@ public class Human implements Comparable<Human> {
     private Calendar birthday;
     private int passportNumber;
 
-    public Human(String name, Date birthday, int passportNumber) {
+    public Human(String name, Calendar birthday, int passportNumber) {
         this.name = name;
         this.birthday = (Calendar) birthday.clone();
         this.passportNumber = passportNumber;
