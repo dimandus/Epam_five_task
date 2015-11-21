@@ -1,18 +1,19 @@
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Human implements Comparable<Human> {
     private String name;
-    private Date birthday;
+    private Calendar birthday;
     private int passportNumber;
 
     public Human(String name, Date birthday, int passportNumber) {
         this.name = name;
-        this.birthday = (Date) birthday.clone();
+        this.birthday = (Calendar) birthday.clone();
         this.passportNumber = passportNumber;
     }
 
-    public Date getBirthday() {
+    public Calendar getBirthday() {
         return birthday;
     }
 
@@ -28,7 +29,7 @@ public class Human implements Comparable<Human> {
 
     @Override
     public String toString() {
-        return super.toString();
+        return name;
     }
 
     @Override
